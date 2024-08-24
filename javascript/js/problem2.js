@@ -10,6 +10,7 @@ function readInput() {
             array.push(inputnumber) 
         }
         if (inputnumber < 0) {
+            array.push(0) 
             break
         }
         else {
