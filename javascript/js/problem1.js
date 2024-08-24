@@ -1,6 +1,5 @@
 let array = new Array()
 function read() {
-    let listprime = "";
     while (true) {
         let inputnumber = prompt("Enter a positive integer");
         if (inputnumber > 0) {
@@ -12,7 +11,6 @@ function read() {
 }
 
 function showPrimes(n) {
-    let listprime = ""
     for (let i = 2; i <= n; i++) {
         if (!isPrime(i)) continue;
         array.push(i)
