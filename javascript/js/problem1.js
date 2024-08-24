@@ -4,7 +4,16 @@ function read() {
         let inputnumber = prompt("Enter a positive integer");
         if (inputnumber > 0) {
             showPrimes(inputnumber)
-            alert('For n = ' + inputnumber + ' prime number is ' + array);
+            if (array.length === 1) {
+                alert('For n = ' + inputnumber + ' prime number is ' + array);
+            }
+            else if (array.length === 0){
+                alert('For n = ' + inputnumber + ' is not have prime number.');
+            }
+            else {
+                alert('For n = ' + inputnumber + ' prime number are ' + array);
+            }
+
             break
         }
     }
